@@ -69,13 +69,13 @@ network.py: the class network is defined here.
 
 optimizer.py: the SGD is defined here and you need to implement the SGD with momentum in this file.
 
-solver.py: the train and test function is defined here.
+solver.py: the train function and test function are defined here.
 ```
 
 You can train a MLP in the `Demo.ipynb` with the builtin layers.
 
-And after you implement your `FCLayer`, `SigmoidLayer` and `ReLULayer` in `layers`, you can set `use_builtin` to `False` to test your implementation.
+And after you implement your `FCLayer`, `SigmoidLayer` and `ReLULayer` in `layers`, you can set `use_builtin` to `False` and run the program again to test your implementation.
 
-Then, build and train the `SigmoidMLP` and `ReLUMLP` in `Problem.ipynb` and compare their difference.
+Then, build and train the `SigmoidMLP` and `ReLUMLP` in `Problem.ipynb`.
 
 Finally, implement `SGDwithMomentum` in `optimizer.py` and train `ReLUMLP_momentum` with `SGDwithMomentum` in `Problem.ipynb`.

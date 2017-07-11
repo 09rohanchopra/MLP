@@ -2,8 +2,8 @@
 ### Jupyter
 
 ```sh
-git clone https://github.com/
-cd *
+git clone https://github.com/wujian752/MLP
+cd MLP
 jupyter notebook --ip 0.0.0.0
 ```
 
@@ -22,6 +22,7 @@ If you are not familar with Jupyter notebook, see [Jupyter notebook basics]( htt
 ##### Jupyter notebook files
 ```
 Problem.ipynb: build and train your model in this notebook.
+
 Demo.ipynb: a demo of this framework in which a MLP is built with builtin FCLayer, ReLULayer.
 ```
 
@@ -49,4 +50,19 @@ optimizer.py: the SGD is defined here and you need to implement the SGD with mom
 
 solver.py: the train and test function is defined here.
 ```
+
+### Connect to the server via ssh
+
+Given the account information as below, 
+| Id | Name | Username | Password | IP             | Port-22 | Port-6006 | Port-8888 |
+|----|------|----------|----------|----------------|---------|-----------|-----------|
+| *  | *    | user     | password | 166.111.69.245 | 22000   | 23000     | 24000     |
+
+ssh to the server with 
+```sh
+ssh -p 22000 user@166.111.69.245
+```
+
+For Mac / Linux, you can use terminal.
+For Windows, you can use [MobaXterm](http://mobaxterm.mobatek.net/download.html)
 

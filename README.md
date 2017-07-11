@@ -32,15 +32,21 @@ layers/
     - sigmoid_layer.py: implement the forward and backward of ReLU layer in this file.
     - relu_layer.py: implement the forward and backward of Sigmoid layer in this file.
     - __init__.py: mark layers/ as Python package directory.
+
 criterion/
     - softmax_cross_entropy.py: the softmax cross entropy criterion.
-    - __init__.py: mark layers/ as Python package directory.
+    - __init__.py: mark criterion/ as Python package directory.
+
 builtin/
     - Some pyc files that can be executed.
+
 MNIST_data/
     - the directory in which MNIST dataset is stored.
+
 network.py: the class network is defined here.
+
 optimizer.py: the SGD is defined here and you need to implement the SGD with momentum in this file.
+
 solver.py: the train and test function is defined here.
 ```
 

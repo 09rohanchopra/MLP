@@ -53,10 +53,11 @@ solver.py: the train and test function is defined here.
 
 ### Connect to the server via ssh
 
-Given the account information as below, 
+Given the account information as below,
+
 | Id | Name | Username | Password | IP             | Port-22 | Port-6006 | Port-8888 |
 |----|------|----------|----------|----------------|---------|-----------|-----------|
-| *  | *    | user     | password | 166.111.69.245 | 22000   | 23000     | 24000     |
+| 0  | Alice    | user     | password | 166.111.69.245 | 22000   | 23000     | 24000     |
 
 ssh to the server with 
 ```sh

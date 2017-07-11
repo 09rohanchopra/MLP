@@ -5,6 +5,9 @@ import numpy as np
 class SigmoidLayer:
     def __init__(self):
         """Applies the element-wise function :math:`f(x) = 1 / ( 1 + exp(-x))`
+        Shape:
+             Input: :math:`(N, num_input)`
+             Output: :math:`(N, num_input)`
         """
         self.trainable = False
 

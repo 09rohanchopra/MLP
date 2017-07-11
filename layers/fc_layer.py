@@ -11,6 +11,14 @@ class FCLayer:
              num_output: size of each output sample
              init_std: std of weight initializer
              trainable: whether if this layer is trainable.
+        Shape:
+             Input: :math:`(N, num_input)`
+             Output: :math:`(N, num_output)`
+
+        Attributes:
+             W: the learnable weights of the module of shape
+                    (num_output x num_input)
+             b:   the learnable bias of the module of shape (num_output, 1)
         """
         self.num_input = num_input
         self.num_output = num_output

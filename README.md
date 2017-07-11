@@ -33,7 +33,7 @@ Jupyter would return you a url like
 ```
 http://0.0.0.0:8888/?token=70f9d9457fec7045f5f991ad9d896060122b13d60cafbbc0
 ```
-Replace the `0.0.0.0` with the ip of your server and the port `8888` with `24000`.
+Replace the `0.0.0.0` with ｀166.111.69.245｀ and the port `8888` with `24000`.
 
 Then copy/paste this URL into your browser.
 

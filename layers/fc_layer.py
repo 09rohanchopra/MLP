@@ -33,9 +33,26 @@ class FCLayer:
     def forward(self, Input):
         # TODO: Put your code here
         # Please delete `pass` and return the output
-        pass
+        
+        #self.Output = Input * np.transpose(self.W) + self.b
+        
+        self.Input = Input
+        
+        self.Output = np.dot(Input, np.transpose(self.W)) + np.transpose(self.b)
+        
+        return self.Output
+    
 
     def backward(self, delta):  # delta has been calculated in the last layer
         # TODO: Put your code here
         # Please delete `pass`, calculate delta, self.grad_W, self.grad_b and return delta
-        pass
+        
+        
+        
+        
+        delta_ = delta.dot(self.W)
+        self.grad_W = (delta.T).dot(self.Input) / self.Input.shape[0]
+        self.grad_b = np.mean(np.transpose(delta), axis = 1, keepdims = True)
+
+        
+        return delta_

@@ -15,9 +15,13 @@ class ReLULayer:
     def forward(self, Input):
         # TODO: Put your code here
         # Please delete `pass` and return the output
-        pass
+        self.Input = Input
+        self.Output = np.maximum(np.zeros((Input.shape[0],Input.shape[1])),Input)
+
+        return self.Output
 
     def backward(self, delta):
         # TODO: Put your code here
         # Please delete `pass`, calculate and return delta
-        pass
+        
+        return (1* (self.Input>0))* delta

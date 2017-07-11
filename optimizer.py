@@ -31,6 +31,10 @@ class SGDwithMomentum(object):
         for layer in layers:
             if layer.trainable:
                 # TODO: Calculate diff_W and diff_b with momentum
+                
+                layer.diff_W = (self.weight_decay * self.momentum) - self.learning_rate * (layer.grad_W + self.weight_decay * layer.W)
+                
+                layer.diff_b = (self.weight_decay * self.momentum) - self.learning_rate * layer.grad_b
 
 
                 # weight updating
